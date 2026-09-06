@@ -27,7 +27,6 @@ jobs:
       - run: npm run build
         env:
           VINEXT_EXPORT: '1'
-          NEXT_PUBLIC_BASE_PATH: /duck
       - run: rm -rf dist/client/.vite
       - uses: actions/upload-pages-artifact@v3
         with:
